@@ -1,0 +1,24 @@
+.button {
+  padding: 0 4rem;
+  height: 55px;
+  font-size: 1.6rem;
+  border: 0;
+  border-radius: 4px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.button-orange {
+  color: $white;
+  background-color: $orange;
+}
+
+.button .icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 1rem;
+}

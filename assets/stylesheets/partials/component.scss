@@ -1,0 +1,96 @@
+.component {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem 3rem;
+  grid-template-areas: 'header header'
+                       'demo usage'
+                       'variants variants'
+                       'experience experience'
+                       'config config'
+                       'style style'
+                       'ada ada';
+}
+
+.heading {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    border-radius: 2px;
+    background-color: $orange;
+  }
+}
+
+.example {
+  grid-area: demo;
+}
+
+.usage {
+  grid-area: usage;
+}
+
+.variants {
+  grid-area: variants;
+}
+
+.variants .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 3rem;
+}
+
+.variants .variant-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+}
+
+.variants .variant-caption {
+  font-size: 1.4rem;
+  color: $light-gray;
+  margin: 0.5rem 0 0;
+}
+
+.variants code {
+  background-color: $faint-gray;
+  font-family: monospace;
+  line-height: 1.4;
+  padding: 2px 4px;
+}
+
+.experience {
+  grid-area: experience;
+}
+
+.experience p {
+  margin-bottom: 2rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.config {
+  grid-area: config;
+}
+
+.style {
+  grid-area: style;
+}
+
+@media only screen and (max-width: 1300px) {
+  .component {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-areas: 'header' 'demo' 'usage' 'variants' 'experience' 'config' 'style' 'ada';
+  }
+}

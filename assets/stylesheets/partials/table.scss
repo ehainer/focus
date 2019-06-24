@@ -1,0 +1,52 @@
+.overflow-table {
+  overflow-x: auto;
+}
+
+.table {
+  max-width: 100%;
+  width: fit-content;
+  display: block;
+  overflow-x: auto;
+  background-color: $white;
+}
+
+.table-cell {
+  padding: 1rem 2rem;
+  text-align: left;
+  min-width: 200px;
+
+  &.is-large {
+    min-width: 400px;
+  }
+
+  &.is-divider {
+    background-color: $focus-blue;
+    color: $white;
+    font-weight: bold;
+  }
+}
+
+.table-cell p {
+  margin-bottom: 0;
+}
+
+.table-cell code {
+  font-family: monospace;
+  padding: 2px 4px;
+  font-size: 1.5rem;
+  background-color: $faint-blue;
+  border-radius: 3px;
+}
+
+.table-cell.is-divider a {
+  color: $white;
+}
+
+.table-header {
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.table-content tr:nth-child(odd) {
+  background-color: $faint-gray;
+}

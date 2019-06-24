@@ -1,0 +1,25 @@
+html,
+body {
+  font-size: 10px;
+}
+
+body {
+  font-family: $sans-serif;
+  margin: 0;
+  color: $base-color;
+  background-color: $faint-gray;
+  line-height: 1.4;
+}
+
+html,
+body,
+#__nuxt,
+#__layout,
+.page {
+  height: 100%;
+  min-height: 100%;
+}
+
+.page {
+  font-size: 1.6rem;
+}
