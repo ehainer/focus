@@ -8,10 +8,10 @@ services:
     ports:
       - 3000:3000
     command:
-      "yarn run dev"
-    # volumes:
-    #   - ./Nuxt/:/app
-    #   - /app/node_modules
+      "yarn start"
     environment:
       - CTF_SPACE_ID=${CTF_SPACE_ID}
       - CTF_ACCESS_TOKEN=${CTF_ACCESS_TOKEN}
+    # volumes:
+    #   - ./Nuxt/:/app
+    #   - /app/node_modules

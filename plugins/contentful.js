@@ -6,6 +6,7 @@ const httpAgent = new http.Agent({ keepAlive: true })
 const httpsAgent = new https.Agent({ keepAlive: true })
 
 export default ({ env }, inject) => {
+
   const config = {
     space: env.CTF_SPACE_ID,
     accessToken: env.CTF_ACCESS_TOKEN,

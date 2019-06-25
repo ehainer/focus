@@ -10,6 +10,8 @@ module.exports = {
     CTF_ACCESS_TOKEN: process.env.CTF_ACCESS_TOKEN
   },
 
+  dev: true,
+
   /**
    * Headers of the page
    */
