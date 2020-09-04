@@ -29,7 +29,7 @@
     "node-sass": "^4.11.0",
     "nuxt": "^2.4.0",
     "sass-loader": "^7.1.0",
-    "showdown": "^1.9.0",
+    "showdown": "^1.9.1",
     "shrink-ray-current": "^3.0.2",
     "vue-prism": "^1.0.5"
   },
